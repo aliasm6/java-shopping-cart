@@ -9,27 +9,27 @@ import java.util.ArrayList;
 
 public class CartTest {
 
-  // @Test
-  // public void ShouldGetInitializedWithoutItemsOrTotalPrice() {
-  //     Cart cart = new Cart();
-  //
-  //     assertEquals(cart.getItems(), new ArrayList<Item>());
-  //     assertEquals(cart.getTotalPrice(), 0, 0);
-  // }
-  //
-  // @Test
-  // public void ShouldAllowAddingItemsToCart() {
-  //     Cart cart = new Cart();
-  //
-  //     Item item1 = new Item("Fruit", 4.50);
-  //     Item item2 = new Item("Ice Cream", 5.50);
-  //
-  //     cart.AddItem(item1);
-  //     assertEquals(cart.getTotalPrice(), 4.50, 0);
-  //
-  //     cart.AddItem(item2);
-  //     assertEquals(cart.getTotalPrice(), 10.00, 0);
-  // }
+  @Test
+  public void ShouldGetInitializedWithoutItemsOrTotalPrice() {
+      Cart cart = new Cart();
+
+      assertEquals(cart.getItems(), new ArrayList<Item>());
+      assertEquals(cart.getTotalPrice(), 0, 0);
+  }
+
+  @Test
+  public void ShouldAllowAddingItemsToCart() {
+      Cart cart = new Cart();
+
+      Item item1 = new Item("Fruit", 4.50);
+      Item item2 = new Item("Ice Cream", 5.50);
+
+      cart.AddItem(item1);
+      assertEquals(cart.getTotalPrice(), 4.50, 0);
+
+      cart.AddItem(item2);
+      assertEquals(cart.getTotalPrice(), 10.00, 0);
+  }
   //
   // @Test
   // public void ShouldDisplayItemizedList() {
